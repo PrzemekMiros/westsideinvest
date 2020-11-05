@@ -33,7 +33,6 @@ body::after {
     transition: all 0.8s ease;
     z-index: 1000;
   }
-  
   .body-loaded::after {
     height: 0% !important;
   }
@@ -41,7 +40,6 @@ body::after {
   .body-loader::before {
     height: 100% !important;
   }
-  
 h1, h2 {
     margin: 0 0 20px;
     letter-spacing: 1px;
@@ -74,7 +72,6 @@ a {
     }
 }
 /*------------- Other ------------------*/
-
 .thin {
     font-weight: 200;
 }
@@ -91,7 +88,6 @@ a {
     }
 }
 /*------------- Responsive -------------*/
-
 .container {
     padding: 0 20px;
 }
@@ -130,38 +126,10 @@ a {
         margin-top: -35%;
     }
 }
-/*--
-.section__main {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("../img/main/main.jpg");
-    background-size: cover;
-}
-
-.section__two {
-    padding: 100px 0;
-}
-
-.parallax-wrapper {
-    overflow-y: hidden;
-  }
-  
-  .parallax {
-    background-image: url('../img/main/main.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  --*/
-
 nav {
     position: fixed;
     background: transparent;
 }
-
-
-
 .button-wwi {
    display: block;
 }
@@ -172,7 +140,6 @@ nav {
 .black {
     color: #222
 }
-
  .banner-1 {
      margin-bottom: 50px;
      overflow: hidden;
@@ -187,7 +154,6 @@ nav {
      -o-background-size: cover;
      background-size: cover;
 }
-
  .wrap-center{
      position: relative;
      z-index: 100;
@@ -196,12 +162,9 @@ nav {
      position: absolute;
      margin-top: 260px;
 }
-
-
 .section__two__card {
     padding: 60px 0 0;
 }
-
 @media(min-width:768px) {
     .section__two__card {
         padding: 80px 30% 0 0;
@@ -213,8 +176,6 @@ nav {
         padding-right: 20%;
     }
 }
-
-
 .section__three {
     padding: 100px 0 200px;
     background: #000;
@@ -228,7 +189,6 @@ nav {
         padding: 0 20% 0 0;
     }
 }
-
 .section__four {
     position: relative;
     margin-top: -120px;
@@ -260,7 +220,6 @@ nav {
     -o-background-size: cover;
     background-size: cover;
 }
-
 @media(min-width:768px) {
     .section__five__card {
         padding: 100px 0 0 0;
