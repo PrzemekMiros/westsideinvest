@@ -55,6 +55,11 @@ h1 {
 h2 {
     font-size: 34px;
 }
+p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #222;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -111,11 +116,11 @@ a {
         width: 50%;
     }
     .marg-top {
-        margin-top: 20%;
-        margin-bottom: -10%;
+        margin-top: 27%;
+        margin-bottom: -18%;
     }
     .marg-top-min {
-        margin-top: -82%;
+        margin-top: -75%;
     }
     .marg-top2 {
         margin-top: 50%;
@@ -158,11 +163,14 @@ nav {
 
 
 .button-wwi {
- 
+   display: block;
 }
 .button-wwi svg {
     margin-left: 15px;
    border-radius: 50%;
+}
+.black {
+    color: #222
 }
 
  .banner-1,
@@ -197,7 +205,7 @@ nav {
 
 @media(min-width:768px) {
     .section__two__card {
-        padding: 60px 30% 0 0;
+        padding: 80px 30% 0 0;
     }
     .marg-left {
         padding-left: 20%;
@@ -213,7 +221,14 @@ nav {
     background: #000;
     color: #fff;
 }
-
+.section__three p {
+    color: #fff;
+}
+@media(min-width:768px) {
+    .section__three__card {
+        padding: 0 20% 0 0;
+    }
+}
 
 .section__four {
     position: relative;
@@ -221,7 +236,7 @@ nav {
     z-index: 9;
 }
 .section__four__wrap {
-    padding: 60px 0;
+    padding: 80px 0 55px;
 }
 .section__four::before {
     position: absolute;
@@ -249,6 +264,6 @@ nav {
 
 @media(min-width:768px) {
     .section__five__card {
-        padding: 100px 0 0 10%;
+        padding: 100px 0 0 0;
     }
 }
