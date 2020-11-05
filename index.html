@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warsaw Westside Investment</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+    <main>
+       <article>
+<!---------------------- Section one -------------------> 
+<section>
+    <div>
+        <div id="banner">
+            <div class="banner__overlay"></div>
+            <div class="wrap-center">
+                <div class="container">
+                <div class="banner-centered" id="banner-text">
+                  
+                        <h1>
+                            <span class="thin">Fundusz</span><br> inwestycyjny
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------------------- Section two -------------------> 
+           <section class="section__two">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-6 flex-center">
+                           <div>
+                            <h2>
+                                Fundusz <br>inwestycyjny
+                            </h2>
+                            <p>
+ Jest to świetna propozycja dla inwestorów chcących dywersyfikować swoje inwestycje, a jednocześnie zapewnić jak największe bezpieczeństwo zainwestowanego kapitału.
+                            </p>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <img src="assets/img/main/main.jpg" class="img-fluid">
+                       </div>
+                   </div>
+                </div>
+            </section>
+<!---------------------- Section three -------------------> 
+            <section class="">
+                <div class="">
+                    <div class="">
+
+                    </div>
+                </div>
+            </section>
+<!---------------------- Section four -------------------> 
+            <section class="">
+                <div class="">
+                    <div class="">
+
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="">
+
+        </div>
+    </footer>
+</body>
+<script>
+// Parallax effect
+// Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X
+
+// Update : added throttle to increase performance
+window.addEventListener('scroll', throttle(parallax, 14));
+
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+};
+
+function parallax() {
+  var scrolled = window.pageYOffset;
+  var parallax = document.querySelector(".parallax");
+  // You can adjust the 0.4 to change the speed
+	var coords = (scrolled * 0.4) + 'px'
+  parallax.style.transform = 'translateY(' + coords + ')';
+};
+</script>
+<script>
+    var divs = $('header'),
+    limit = 100;  /* scrolltop value when opacity should be 0 */
+
+$(window).on('scroll', function() {
+   var st = $(this).scrollTop();
+
+   /* avoid unnecessary call to jQuery function */
+   if (st <= limit) {
+     divs.css({ 'opacity' : (1 - st/limit)});
+   }
+});
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script>
+    	(function($) {
+
+"use strict"
+
+$(function() {
+    function scrollBanner() {
+        $(document).scroll(function() {
+            var scrollPos = $(this).scrollTop();
+            $('#banner-text').css({
+                'top': (scrollPos / 3) + 'px',
+                'opacity': 1 - (scrollPos / 510)
+            });
+            $('#banner').css({
+                'background-position': 'center ' + (-scrollPos / 3) + 'px'
+            });
+        });
+    }
+    scrollBanner();
+
+});
+
+})(jQuery);
+</script>
+</html>
