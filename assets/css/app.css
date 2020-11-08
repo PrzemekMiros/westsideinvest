@@ -12,13 +12,14 @@
   --white2: #fffbf4;
 	--grey-light: #f2f7f9;
 	--grey: #ecedf3;
-	--black: #0f0f0f;
+	--black: #1f1f1f;
 	--black-blue: #1f2029;
 	--black-blue-light: #353746;
 	--black-blue-light-2: #404255;
 	--black-blue-light-3: #4b4d64;
   --black-light: #424455;
-  --line: rgba(0, 0, 0, 0.267);
+  --line: rgba(0, 0, 0, 0.25);
+  --line2: rgba(248, 248, 248, 0.15);
   --creme: #f1e2cd;
 }
 body {
@@ -61,7 +62,7 @@ h2 {
   position: relative;
   padding: 0 0 35px;
   margin: 0 0 45px;
-  color: #222;
+  color: var(--black);
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
@@ -75,7 +76,13 @@ height: 1px;
 bottom: 0;
 left: 0;
 width: 88%;
-background-color: #31251c2c;
+background-color: var(--line);
+}
+body.light h2 {
+  color: var(--white);
+}
+body.light h2::after {
+  background-color: var(--line2);
 }
 h3 {
     font-size: 28px;
@@ -89,6 +96,7 @@ p {
     font-size: 17px;
     font-weight: 200;
     color: var(--black);
+    letter-spacing: 1px;
 }
 p.light {
     color: var(--white);
@@ -123,12 +131,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f8f8f8;
+  background-color: var(--white2);
   border-radius: 3px;
   z-index: 99;
 }
 .cookie-banner p {
 margin-bottom: 0;
+font-size: 14px;
 }
 
 .close {
@@ -145,7 +154,7 @@ margin-bottom: 0;
 
 .progress-wrap {
 	position: fixed;
-	right: 40px;
+	right: 32px;
 	bottom: 40px;
 	height: 36px;
 	width: 36px;
@@ -297,6 +306,7 @@ nav {
     color: #fff;
     font-size: 14px;
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 0.04em;
     transition: .3s ease-in-out;
   }
@@ -422,6 +432,9 @@ nav {
 .relative {
     position: relative;
 }
+.absolute {
+  position: absolute;
+}
 .index {
     position: relative;
     z-index: 9;
@@ -464,7 +477,7 @@ nav {
         padding: 0 14%;
     }
     .container1 {
-      padding: 0 6%;
+      padding: 0 7%;
   }
     .container2 {
         padding: 10px 3% 0;
@@ -476,7 +489,7 @@ nav {
         padding: 0 0 0 14%;
     }
     .container5 {
-      padding: 0 6% 0 14%;
+      padding: 0 7% 0 14%;
   }
     .row {
         display: flex;
@@ -501,7 +514,7 @@ nav {
         margin-bottom: -80%;
     }
     .width-80 {
-      width: 88%;
+      width: 94%;
     }
 }
 /*--------------- Image Hover ----------------*/
@@ -544,7 +557,7 @@ nav {
      margin-top: 260px;
 }
 .background-main {
-    height: 650px;
+    height: 100vh;
     background: transparent url("../img/main/main.jpg") fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -572,21 +585,27 @@ nav {
   position: absolute;
   display: block;
   background: var(--creme);
-  width: 74%;
+  width: 100%;
   z-index: -1;
+}
+body.light .section__three::after {
+  background: var(--black-light);
 }
 @media(min-width:768px) {
   .padd-right {
     padding-right: 20%;
   }
   .padd-left {
-    padding-left: 20%;
+    padding-left: 15%;
   }
   .padd-text {
     padding-right: 30%;
   }
   .padd-text2 {
-    padding-right: 40%;
+    padding-right: 46%;
+  }
+    .section__three::after {
+      width: 74%;
   }
 }
 
@@ -627,7 +646,7 @@ nav {
 }
 @media(min-width:768px) {
   .text-big {
-    width: 89%;
+    width: 85%;
   }
 }
 .arrow{
@@ -659,7 +678,7 @@ nav {
 }
 .main .container4 .swiper-container .swiper-pagination-bullet {
   opacity: 0.8;
-  background: #252a32;
+  background: #f1e2cd;
 }
 .main .container .swiper-container .swiper-pagination-bullet-active {
   background: #ffffff;
@@ -672,7 +691,15 @@ nav {
   background-position: 0;
   margin-top: -1rem;
 }
-
+.swiper-button-next, .swiper-button-prev {
+  top: 95%!important;
+}
+.swiper-button-prev {
+  left: 38px!important;
+}
+.swiper-button-next {
+  left: 8px!important;
+}
 /*--------------- Section four ----------------*/
 .section__four {
   padding: 20px 0 60px;
@@ -696,8 +723,16 @@ nav {
   position: absolute;
   display: block;
   background: var(--creme);
-  width: 74%;
+  width: 100%;
   z-index: -1;
+}
+body.light .section__six::after {
+  background: var(--black-light);
+}
+@media(min-width:768px) {
+  .section__six::after {
+    width: 74%;
+  }
 }
 /*--------------- Section seven ----------------*/
 .section__seven {
@@ -723,8 +758,16 @@ nav {
   position: absolute;
   display: block;
   background: var(--creme);
-  width: 74%;
+  width: 100%;
   z-index: -1;
+}
+body.light .section__nine::after {
+  background: var(--black-light);
+}
+@media(min-width:768px) {
+  .section__nine::after {
+    width: 74%;
+  }
 }
 /*--------------- Section ten ----------------*/
 .section__ten {
@@ -776,3 +819,8 @@ footer svg {
     width: 17px;
     height: 17px;
 }
+
+.polityka h2 {
+  padding: 50px 0 35px;
+}
+
