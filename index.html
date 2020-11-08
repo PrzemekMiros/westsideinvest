@@ -436,7 +436,16 @@ Szczegółowe informacje n/t stosowanych technologii i unikalnych rozwiązań pr
     var rellax = new Rellax('.rellax', {center: true});
 </script>
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/lucid.js"></script>
+<script>
+    $(window).on('load', function() {
+    
+      $(this).impulse({
 
+range: 200
+});
+    });
+    </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
 <script>
 var swiper = new Swiper(".swiper-container", {
