@@ -30,9 +30,9 @@ body {
     -webkit-overflow-scrolling: touch;
     background: var(--black);
     color: var(--white);
-	-webkit-transition: all 200ms;
-	transition: all 200ms; 
-	text-rendering: optimizeLegibility !important;
+	  -webkit-transition: all 200ms;
+	  transition: all 200ms; 
+	  text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     overflow-x: hidden;
 }
@@ -48,6 +48,49 @@ body.light{
   background-color: var(--white2);
   color: var(--black);
 }
+
+.intro {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-blue);
+  z-index: 9999;
+  animation: fadeOut 6s linear forwards;
+}
+.intro svg {
+  width: 30vw;
+  height: auto;
+}
+@keyframes fadeOut {
+  0% {
+    transform: translateY(0);
+  }
+  88% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.after-intro {
+  animation: fadeInMain 1s linear;
+  -webkit-animation-delay: 5s;
+}
+@keyframes fadeInMain {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 
 h1, h2, h3 {
     margin: 0 0 25px;
@@ -95,7 +138,7 @@ font-weight: 200;
 }
 p {
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 200;
     color: var(--white);
     letter-spacing: 1px;
@@ -112,7 +155,7 @@ li {
 }
 @media(min-width:768px) {
     .h1, h1 {
-        font-size: 4.2vw;
+        font-size: 4.4vw;
         color: #fff;
     }
     h2 {
@@ -140,8 +183,8 @@ li {
   z-index: 99;
 }
 body.light .cookie-banner {
-  background-color: #000;
-  color: #fff;
+  background-color:var(--black);
+  color:var(--white);
 }
 .cookie-banner p {
 margin-bottom: 0;
@@ -295,8 +338,12 @@ header {
     z-index: 999;
 }
 .logo img {
-  width: 260px;
+  width: 290px;
   margin-top: -20px;
+}
+header svg {
+  width: 200px;
+  height: auto;
 }
 nav {
     padding: 30px;
@@ -630,16 +677,19 @@ body.light main {
      overflow: hidden;
      width: 100%;
      position: relative;
+     display: flex;
+     align-items: center;
      z-index: -1;
      clear: both;
 }
  .wrap-center{
      position: relative;
      z-index: 100;
+     width: 100%;
 }
  .banner-centered {
      position: relative;
-     margin-top: 260px;
+     top: 35px;
 }
  .banner-centered::after {
   position: absolute;
@@ -698,7 +748,7 @@ body.light .section__three::after {
     padding-right: 30%;
   }
   .padd-text2 {
-    padding-right: 46%;
+    padding-right: 31%;
   }
     .section__three::after {
       width: 74%;

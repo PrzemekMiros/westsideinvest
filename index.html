@@ -22,23 +22,85 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css'>
     <link rel="stylesheet" href='assets/css/glightbox.min.css'>
+ 
     <script>document.documentElement.className = 'js';</script>
 </head>
 <body>
-     
+     <div class="intro">
+     <div>
+      <svg id="test" viewBox="0 0 449 347" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style type="text/css">
+          .st0 {
+              fill: #FFFFFF;
+          }
+
+          .st1 {
+            opacity:1;
+              fill: none;
+              stroke:#fff;
+              stroke-width: 2;
+              stroke-dasharray:2800;
+              stroke-dashoffset:0;
+              -webkit-animation: dash 4s linear forwards;
+              -o-animation: dash 4s linear forwards;
+              -moz-animation: dash 4s linear forwards;
+              animation: dash 4s linear forwards;
+          }
+          .st2 {
+              stroke: #fff;
+              stroke-width: 3;
+              stroke-dasharray:1200;
+              stroke-dashoffset:0;
+              -webkit-animation: op 5s linear forwards;
+              -o-animation: op 5s linear forwards;
+              -moz-animation: op 5s linear forwards;
+              animation: op 5s linear forwards;
+      
+          }
+
+      
+          @-webkit-keyframes dash{
+            from{
+              stroke-dashoffset:2800;
+              opacity:0;
+            }
+            to{
+              stroke-dashoffset:0;
+              opacity:1;
+            }
+          }
+      
+              @-webkit-keyframes op{
+            from{
+      
+              opacity:0;
+            }
+            to{
+      
+              opacity:1;
+            }
+          }
+          </style>
+
+        <path class="st1" d="M62 224.76L12 251.339V345H2V295.638L41 300.701V345H31V275.387H41L121 299.435V345H111V189.321L121 200.712L142 189.321V139.959L152 147.554V113.38L147 108.317L161 95.6605V2H168V95.6605L182 108.317L177 113.38V147.554L187 139.959V189.321L208 200.712L218 189.321V345H208V269.059L300 267.793V345H290V224.76L331 247.542V345H321V256.402L365 271.59V345H355V139.959L414 171.601V345H425L447 208.306" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10"/>
+        </svg>
+
+     </div>
+     </div>
     <div class="cookie-banner" style="display: none">
         <p>Korzystając ze strony akceptujesz <a href="polityka.html">politykę prywatności</a></p>
         <button class="close">&times;</button>
     </div>
                             
-<div class="progress-wrap">
+<div>
+  <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
     </svg>
 </div>
 <header class="container2" id="header">
         <a href="index.html" class="logo">
-            <img src="assets/img/logo2.png">
+          <img src="assets/img/logo2.png">
         </a>
         <nav>
             <input type="checkbox" id="nav" class="hidden"/>
@@ -126,22 +188,18 @@
     <main>
 <article>
 <!---------------------- Section one -------------------> 
-<section>
+<section class="after-intro">
     <div>
         <div class="banner background-main" id="banner">
             <div class="banner__overlay"></div>
             <div class="wrap-center">
                 <div class="container3">
                 <div class="banner-centered" id="banner-text">
-                  
                         <h1>
                             <span class="thin">Fundusz</span><br> inwestycyjny
                         </h1>
                         <a href="#">
                             Przewiń w dół
-                            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.3618 4.85355C15.5571 4.65829 15.5571 4.34171 15.3618 4.14645L12.1799 0.964466C11.9846 0.769204 11.668 0.769204 11.4727 0.964466C11.2775 1.15973 11.2775 1.47631 11.4727 1.67157L14.3012 4.5L11.4727 7.32843C11.2775 7.52369 11.2775 7.84027 11.4727 8.03553C11.668 8.2308 11.9846 8.2308 12.1799 8.03553L15.3618 4.85355ZM0.988281 5H15.0083V4H0.988281V5Z" fill="#fff"/>
-                            </svg> 
                         </a>
                     </div>
                 </div>
@@ -157,7 +215,7 @@
 Fundusz Inwestycyjny Warsaw West Side Investment 
             </h2>
             <p class="width-80">
-                Inwestuje w nieruchomości klasy premium, gdyż ten segment rynku nieruchomości stanowi obecnie niezapełnioną niszę na rynku, a wedle najnowszych raportów analityków rynek ten w najbliższych 6-8 latach będzie się dynamicznie rozwijał na poziomie ok 5-6% rocznie. Daje to naszym inwestorom szanse na skorzystanie z rozwoju tego segmentu i możliwość zarobku, lub też nabycia inwestycji klasy premium na własność.
+              Firma Warsaw Westside Investment od lat inwestuje w nieruchomości klasy Premium, ponieważ właśnie ten segment nieruchomości stanowi obecnie niezapełnioną niszę na rynku. Popyt na zakup nieruchomości stale rośnie. Wedle najnowszych raportów analityków rynek dóbr luksusowych w najbliższych 6-8 latach będzie dynamicznie rozwijał się i wzrastał na poziomie ok 5-6% rocznie. Daje to naszym inwestorom szanse na skorzystanie z rozwoju tego segmentu i możliwość zarobku, a także nabycia inwestycji Premium na własność.
             </p>
         </div>
     </div>
@@ -185,7 +243,7 @@ Fundusz Inwestycyjny Warsaw West Side Investment
                     <div class="flex-center-hor">
                         <div>
                             <p class="text-big">
-                                w obecnej chwili są bardzo dobrą alternatywą 
+                              to obecnie bardzo dobra alternatywa
                             </p>
                         </div>
                     <div class="logoin">
@@ -208,9 +266,8 @@ Fundusz Inwestycyjny Warsaw West Side Investment
                     </div>
                     </div>
                     <p class="padd-text2">
-                        Dla inwestycji w lokaty bankowe, akcje giełdowe, czy też samodzielnego inwestowania w nieruchomości. 
-                        Inwestycja w weksle jest bezpieczną inwestycją w rosnący stale rynek nieruchomości klasy premium. 
-                    </p>
+                      Weksle inwestycyjne są bardzo dobrym rozwiązaniem oraz alternatywą dla lokat bankowych, akcji giełdowych, czy też samodzielnego inwestowania w nieruchomości. Zaangażowanie kapitałowe w weksle jest bezpieczną inwestycją w stale rosnący rynek nieruchomości klasy Premium. Weksle inwestycyjne obecnie są kilkukrotnie bardziej opłacalne. Inwestycja w Weksle jest stabilnym procesem, który zapewnia zrównoważoną dochodowość. 
+                    </p><br>
                     <a href="#four" class="button-wwi">
                         Zobacz wiecej
                         <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,8 +287,7 @@ Fundusz Inwestycyjny Warsaw West Side Investment
                         Weksle oferowane przez Warsaw West Side Investment
                     </h2>
                     <p class="width-80">
-                        są zabezpieczone hipoteką na nieruchomości w wysokości 150% inwestycji. Inwestycje w oferowane przez nas weksle dają stałe oprocentowanie od 5 do 12% w skali roku w zależności od kwoty, długości inwestycji oraz kapitalizacji odsetek.
-                        Jest to świetna propozycja dla inwestorów chcących dywersyfikować swoje inwestycje, a jednocześnie zapewnić jak największe bezpieczeństwo zainwestowanego kapitału.
+                      Weksle są zabezpieczone hipoteką na nieruchomości w wysokości 150% inwestycji. Inwestycje w oferowane przez nas weksle dają stałe oprocentowanie od 5 do 12% w skali roku w zależności od kwoty, długości inwestycji oraz kapitalizacji odsetek. Jest to znakomita opcja dla inwestorów, którzy chcą dywersyfikować źródła inwestycji, jak również dla osób które chcą uzyskać większe oprocentowanie, niż zapewniają lokaty bankowe. Jednocześnie weksle inwestycyjne zachowują bezpieczeństwo inwestycji.
                     </p>
     </div>
 </section>
@@ -318,14 +374,8 @@ Fundusz Inwestycyjny Warsaw West Side Investment
                         </div>
                     </div>
                     <p class="padd-text">
-                        jest jego większa stabilność i odporność na kryzysy gospodarcze. Pokazał to już kryzys z 2008 roku, który wyjątkowo szorstko obszedł się z rynkiem nieruchomości. Choć wtedy tradycyjne mieszkania nawet w kilkuletniej perspektywie odczuwalnie straciły na swojej wartości, to apartamenty klasy premium wyszły z niego obronną ręką
+                      Przewagą rynku nieruchomości luksusowych jest przede wszystkim jego większa stabilność i odporność na kryzysy gospodarcze. Już w 2008 roku pokazał to kryzys gospodarczy, który wyjątkowo mocno i drastycznie obszedł się z rynkiem nieruchomości. Choć wtedy tradycyjne mieszkania nawet w kilkuletniej perspektywie odczuwalnie straciły na swojej wartości, to apartamenty klasy Premium wyszły z niego obronną ręką. Ponadto, nieruchomości Premium są odporne na wahania rynków finansowych, ponieważ w takim czasie klienci poszukują najlepszych adresów.
                     </p>
-                    <a href="#" class="button-wwi">
-                        Zobacz wiecej
-                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.3618 4.85355C15.5571 4.65829 15.5571 4.34171 15.3618 4.14645L12.1799 0.964466C11.9846 0.769204 11.668 0.769204 11.4727 0.964466C11.2775 1.15973 11.2775 1.47631 11.4727 1.67157L14.3012 4.5L11.4727 7.32843C11.2775 7.52369 11.2775 7.84027 11.4727 8.03553C11.668 8.2308 11.9846 8.2308 12.1799 8.03553L15.3618 4.85355ZM0.988281 5H15.0083V4H0.988281V5Z" fill="#fff"/>
-                      </svg> 
-                    </a>
                 </div>
             </div>
             <div class="col-6">
@@ -348,11 +398,10 @@ Fundusz Inwestycyjny Warsaw West Side Investment
     <div class="container hidden3">
 
                     <h2>             
-Posiadamy nieruchomości w atrakcyjnych lokalizacjach w całej Polsce
+                      NASZE NIERUCHOMOŚCI SĄ W CAŁEJ POLSCE
                     </h2>
                     <p class="width-80">
-                        plany inwestycyjne są dostępna dla zainteresowanych inwestorów.
-Doświadczenie na rynku budowlanym pozwala nam dobrze poznać potrzeby naszych klientów i opracować standardy jakości w pełni je zaspokajające. Wiedza o najnowszych trendach architektonicznych i rozwiązaniach technicznych inspiruje nas do realizacji atrakcyjnych i bardziej zaawansowanych technologicznie projektów.
+                      Posiadamy nieruchomości w wielu atrakcyjnych lokalizacjach w całej Polsce. Dokładne plany inwestycyjne są dostępne dla zainteresowanych inwestorów. Doświadczenie na rynku budowlanym pozwala nam dobrze poznać potrzeby naszych klientów i opracować standardy jakości w pełni te potrzeby zaspokajające. Wiedza o najnowszych trendach architektonicznych i rozwiązaniach technicznych inspiruje nas i napędza do realizacji atrakcyjnych i bardziej zaawansowanych technologicznie projektów. Warsaw Westside Investment angażuje się aktywnie w życie dzielnic o podwyższonym standardzie. Dbamy o komfort i bezpieczeństwo klientów na każdym etapie współpracy.
                     </p>
     </div>
 </section>
@@ -708,8 +757,8 @@ Doświadczenie na rynku budowlanym pozwala nam dobrze poznać potrzeby naszych k
                                </div>           
                     </div>
                     <p class="padd-text2">
-                        Nasze budynki, wyróżniają się niebanalną architekturą, panoramicznymi przeszkleniami oraz dużą funkcjonalnością. Dogodne lokalizacje i bliskość terenów zielonych to dodatkowe atuty naszych inwestycji.
-                    </p>
+                      Nasze budynki, wyróżniają się niebanalną architekturą, panoramicznymi przeszkleniami oraz dużą funkcjonalnością. Dogodne lokalizacje i bliskość terenów zielonych to dodatkowe atuty naszych inwestycji. Największym celem firmy jest zapewnienie klientom wysokiego poziomu komfortu. Lokale łączą w sobie funkcjonalność, ale także estetykę, która wpisze się w gusta nawet najbardziej wymagających klientów.
+                    </p><br>
                     <a href="#" class="button-wwi">
                         Zobacz wiecej
                         <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -729,9 +778,7 @@ Doświadczenie na rynku budowlanym pozwala nam dobrze poznać potrzeby naszych k
 Pracujemy z najlepszymi projektantami 
         </h2>
         <p>
-          chętnie stosującymi najnowsze rozwiązania technologiczne i unikalne pomysły architektoniczne.
-          Standardowo wyposażamy nasze mieszkania / apartamenty / lofty w szereg najwyższych jakościowo rozwiązań, które tworzą Mieszkania klasy Premium”.
-          Szczegółowe informacje n/t stosowanych technologii i unikalnych rozwiązań przekazujemy klientom w trakcie indywidualnych spotkań
+          Staramy się nawiązywać współpracę z doświadczonymi, najlepszymi projektantami, którzy chętnie stosują najnowsze rozwiązania technologiczne i unikalne pomysły architektoniczne. Standardowo wyposażamy nasze mieszkania / apartamenty / lofty w szereg najwyższych jakościowo rozwiązań, które tworzą „Mieszkania klasy Premium”. Szczegółowe informacje na temat stosowanych technologii i unikalnych rozwiązań przekazujemy klientom w trakcie indywidualnych spotkań, na które serdecznie Państwa zapraszamy.
         </p>
     </div>
 </section>
@@ -743,19 +790,19 @@ Pracujemy z najlepszymi projektantami
     </h2>
     <div id="counter">
       <li>
-        <span class="count percent" data-count="15">
+        <span class="count percent" data-count="12">
           0
         </span><br>
         <span class="font-16">
-          zwrotu z inwestycji
+          oprocentowanie w skali roku
         </span>
       </li>
         <li>
-        <span class="count percent" data-count="55">
+        <span class="count percent" data-count="150">
           0
         </span><br>
         <span class="font-16">
-          zwrotu z inwestycji
+          zabezpieczenia inwestycji
         </span>
       </li>
         <li>
@@ -796,28 +843,28 @@ Pracujemy z najlepszymi projektantami
     
 <div class="gallery letter">
   <div class="item-a"> 
-    <a href="assets/img/main/residential-1.jpg" class="glightbox"><img src="assets/img/main/residential-1.jpg"></a>
+    <a href="assets/img/shutter/1.png" class="glightbox"><img src="assets/img/shutter/1.png"></a>
   </div>
   <div> 
-    <a href="assets/img/main/residential-2.jpg" class="glightbox"><img src="assets/img/main/residential-2.jpg"></a>
+    <a href="assets/img/shutter/2.png" class="glightbox"><img src="assets/img/shutter/2.png"></a>
   </div>
   <div class="item-b"> 
-    <a href="assets/img/main/residential-3.jpg" class="glightbox"><img src="assets/img/main/residential-3.jpg"></a>
+    <a href="assets/img/shutter/3.png" class="glightbox"><img src="assets/img/shutter/3.png"></a>
   </div>
   <div> 
-    <a href="assets/img/main/residential-1.jpg" class="glightbox"><img src="assets/img/main/residential-1.jpg"></a>
+    <a href="assets/img/shutter/4.png" class="glightbox"><img src="assets/img/shutter/4.png"></a>
   </div>
   <div class="item-c">
-    <a href="assets/img/main/residential-2.jpg" class="glightbox"><img src="assets/img/main/residential-2.jpg"></a>
+    <a href="assets/img/shutter/5.png" class="glightbox"><img src="assets/img/shutter/5.png"></a>
   </div>
   <div> 
-    <a href="assets/img/main/residential-3.jpg" class="glightbox"><img src="assets/img/main/residential-3.jpg"></a>
+    <a href="assets/img/shutter/6.png" class="glightbox"><img src="assets/img/shutter/6.png"></a>
   </div>
   <div> 
-    <a href="assets/img/main/residential-1.jpg" class="glightbox"><img src="assets/img/main/residential-1.jpg"></a>
+    <a href="assets/img/shutter/7.png" class="glightbox"><img src="assets/img/shutter/7.png"></a>
   </div>
   <div class="item-d"> 
-    <a href="assets/img/main/residential-2.jpg" class="glightbox"><img src="assets/img/main/residential-2.jpg"></a>
+    <a href="assets/img/shutter/8.png" class="glightbox"><img src="assets/img/shutter/8.png"></a>
   </div>
 </div>
   </div>
@@ -964,13 +1011,16 @@ Pracujemy z najlepszymi projektantami
         </div>
        </div>
     </footer>
+</div>
+
 
 <script src="assets/js/easings.js"></script>
 <script src="assets/js/rellax.min.js"></script>
 <script>
     var rellax = new Rellax('.rellax', {center: true});
 </script>
-<script src="assets/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 <script src="assets/js/lucid.js"></script>
 <script>
     $(window).on('load', function() {
