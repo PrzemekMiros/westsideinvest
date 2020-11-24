@@ -28,7 +28,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -webkit-overflow-scrolling: touch;
-    background: var(--black);
+    background: var(--black-blue);
     color: var(--white);
 	  -webkit-transition: all 200ms;
 	  transition: all 200ms; 
@@ -78,20 +78,6 @@ body.light{
   }
 }
 
-.after-intro {
-  animation: fadeInMain 1s linear;
-  -webkit-animation-delay: 5s;
-}
-@keyframes fadeInMain {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-
 h1, h2, h3 {
     margin: 0 0 25px;
     letter-spacing: 1px;
@@ -107,9 +93,8 @@ h2 {
   padding: 0 0 35px;
   margin: 0 0 30px;
   color: var(--white);
-    font-size: 30px;
+    font-size: 37px;
     font-weight: 300;
-    text-transform: uppercase;
 }
 h2::after {
   content: "";
@@ -644,13 +629,13 @@ img {
   display: block;
   padding: 10px 20px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   color: #fff;
   max-width: max-content;
   cursor: pointer;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
 }
 .button-wwi svg {
     margin-left: 15px;
@@ -760,7 +745,7 @@ body.light .section__three::after {
 .rotate,
 .rotate1,
 .rotate2 {
-  margin: -90px;
+  margin: -95px;
 }
 .rotate text,
 .rotate1 text,
@@ -774,11 +759,12 @@ body.light .section__three::after {
 .logoin::after {
   position: absolute;
   content: "";
-  top: 30%;
-  left: 30%;
-  bottom: 30%;
-  right: 30%;
+  top: 26%;
+  left: 25%;
+  bottom: 25%;
+  right: 18%;
   background: url("../img/svg/logoin.svg");
+      background-size: auto;
   background-size: cover;
 }
   
@@ -847,6 +833,9 @@ body.light .section__three::after {
 }
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: -5px!important;
+}
+.swiper-slide h3 {
+  margin-top: 10px;
 }
 /*--------------- Section four ----------------*/
 .section__four {
@@ -1005,6 +994,58 @@ body.light .section__counter::after {
 }
 .item-d {
   grid-column: 3/5;
+}
+
+.section__accordion {
+  padding: 0 0 140px;
+}
+#accordion_search_bar_container {
+  position: relative;
+}
+#accordion_search_bar_container:after {
+  content: '\e003';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#accordion_search_bar_container #accordion_search_bar {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  padding: 7px 10px;
+  border: none;
+  outline: 0;
+}
+.panel-title {
+  border-bottom: 1px solid #ffffff75;
+  padding: 20px 0;
+}
+.panel-title a {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+.img-circle {
+  border-radius: 50%; 
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+[role="button"] {
+  cursor: pointer;
 }
 
 /*--------------- Section Form ----------*/
