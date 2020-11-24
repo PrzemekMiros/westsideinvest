@@ -77,6 +77,18 @@ body.light{
     transform: translateY(-100%);
   }
 }
+.after-intro {
+  animation: introFade 1s linear;
+  animation-delay: 5s;
+}
+@keyframes introFade {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 
 h1, h2, h3 {
     margin: 0 0 25px;
