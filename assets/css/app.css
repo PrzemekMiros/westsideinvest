@@ -683,6 +683,7 @@ body.light main {
      position: relative;
      z-index: 100;
      width: 100%;
+     padding-top: 48px;
 }
  .banner-centered {
      position: relative;
@@ -742,10 +743,10 @@ body.light .section__three::after {
     padding-left: 14%;
   }
   .padd-text {
-    padding-right: 30%;
+    padding-right: 25%;
   }
   .padd-text2 {
-    padding-right: 31%;
+    padding-right: 26%;
   }
     .section__three::after {
       width: 74%;
@@ -1009,55 +1010,156 @@ body.light .section__counter::after {
 }
 
 .section__accordion {
-  padding: 0 0 140px;
+  padding: 0 0 100px;
 }
-#accordion_search_bar_container {
+.heading-primary {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+}
+
+.accordion dl:after,
+.accordion-list:after {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+}
+
+.accordion dd,
+.accordion__panel {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.accordion p {
+  padding: 2em 0;
+}
+
+.accordion {
   position: relative;
 }
-#accordion_search_bar_container:after {
-  content: '\e003';
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-#accordion_search_bar_container #accordion_search_bar {
+
+.accordionTitle,
+.accordion__Heading {
+  padding: 2em 0;
   display: block;
-  margin: 10px auto;
-  width: 100%;
-  padding: 7px 10px;
-  border: none;
-  outline: 0;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.panel-title {
-  border-bottom: 1px solid #ffffff75;
-  padding: 20px 0;
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: right;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-.panel-title a {
-  display: block;
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-figure {
-  margin: 0;
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
 }
 
-.img-circle {
-  border-radius: 50%; 
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
+.accordionItem {
+  height: auto;
   overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
+  max-height: 50em;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+}
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 15em;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
 }
 
-[role="button"] {
-  cursor: pointer;
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+.animateIn {
+  -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+          animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+          animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
 }
 
 /*--------------- Section Form ----------*/
